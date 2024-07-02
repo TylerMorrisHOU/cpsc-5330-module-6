@@ -17,10 +17,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Hka-4a-oQv">
-                                <rect key="frame" x="80" y="661" width="270" height="237"/>
+                                <rect key="frame" x="80" y="630.66666666666663" width="270" height="267.33333333333337"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USD must be an integer!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gG1-Lq-mcH">
+                                        <rect key="frame" x="0.0" y="0.0" width="270" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemRedColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="104" translatesAutoresizingMaskIntoConstraints="NO" id="c3k-ka-iUz">
-                                        <rect key="frame" x="0.0" y="0.0" width="270" height="28.666666666666668"/>
+                                        <rect key="frame" x="0.0" y="30.333333333333371" width="270" height="28.666666666666671"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter USD:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyg-B9-O5G">
                                                 <rect key="frame" x="0.0" y="0.0" width="83.666666666666671" height="28.666666666666668"/>
@@ -33,14 +39,13 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <connections>
-                                                    <action selector="textValidate:" destination="BYZ-38-t0r" eventType="valueChanged" id="Q9s-wG-Qe6"/>
-                                                    <action selector="validateText:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="Uov-3d-fvp"/>
+                                                    <action selector="textValidate:" destination="BYZ-38-t0r" eventType="editingChanged" id="Lki-sg-xXd"/>
                                                 </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="89" translatesAutoresizingMaskIntoConstraints="NO" id="eDi-qK-r1u">
-                                        <rect key="frame" x="0.0" y="38.666666666666629" width="270" height="31"/>
+                                        <rect key="frame" x="0.0" y="69" width="270" height="31"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EUR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mUV-Eu-Qts">
                                                 <rect key="frame" x="0.0" y="0.0" width="132" height="31"/>
@@ -54,7 +59,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="86" translatesAutoresizingMaskIntoConstraints="NO" id="TiF-n1-kJx">
-                                        <rect key="frame" x="0.0" y="79.666666666666629" width="270" height="31"/>
+                                        <rect key="frame" x="0.0" y="110" width="270" height="31"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JPY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k2q-UN-bSZ">
                                                 <rect key="frame" x="0.0" y="0.0" width="135" height="31"/>
@@ -68,7 +73,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="86" translatesAutoresizingMaskIntoConstraints="NO" id="fNP-s2-1dN">
-                                        <rect key="frame" x="0.0" y="120.66666666666663" width="270" height="31"/>
+                                        <rect key="frame" x="0.0" y="151" width="270" height="31"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GBP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yvG-fq-lNC">
                                                 <rect key="frame" x="0.0" y="0.0" width="135" height="31"/>
@@ -82,7 +87,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="86" translatesAutoresizingMaskIntoConstraints="NO" id="7gP-Iu-jUI">
-                                        <rect key="frame" x="0.0" y="161.66666666666663" width="270" height="31"/>
+                                        <rect key="frame" x="0.0" y="192" width="270" height="31"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHF" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PN2-rJ-hQ7">
                                                 <rect key="frame" x="0.0" y="0.0" width="135" height="31"/>
@@ -96,7 +101,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GTX-gU-7tm">
-                                        <rect key="frame" x="0.0" y="202.66666666666663" width="270" height="34.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="233" width="270" height="34.333333333333314"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Convert">
                                             <backgroundConfiguration key="background">
@@ -144,6 +149,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="ErrorLabel" destination="gG1-Lq-mcH" id="KxB-H6-7z5"/>
                         <outlet property="chfSwitch" destination="ptj-UU-JIb" id="0Bu-Fu-SZF"/>
                         <outlet property="convertButton" destination="GTX-gU-7tm" id="lib-TY-jtK"/>
                         <outlet property="eurSwitch" destination="0s1-lQ-QZb" id="kAB-MA-OGI"/>
@@ -308,6 +314,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

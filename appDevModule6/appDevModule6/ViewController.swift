@@ -16,6 +16,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var chfSwitch: UISwitch!
     @IBOutlet weak var convertButton: UIButton!
     
+    let intRegex = /^(-?)(\d+)$/
+    
+    @IBOutlet weak var ErrorLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -23,15 +26,10 @@ class ViewController: UIViewController {
     
     
     @IBAction func textValidate(_ sender: Any) {
-        convertButton.isEnabled = false
-    }
-    
-    
-    func textFieldDidChange(textField: UITextField) {
-        if (false) {
-            convertButton.isEnabled = false
+        if ((usdInput.text ?? "").contains(intRegex)) {
+            ErrorLabel.isHidden = true
         } else {
-            convertButton.isEnabled = true
+            ErrorLabel.isHidden = false
         }
     }
     
